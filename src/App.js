@@ -10,7 +10,7 @@ class Code extends React.Component {
     };
     this.handleChange = this.handleChange.bind(this);
   }
-  /*As you type, the input state is automatically updated*/
+  /*As you type, the input state is automatically updated.*/
   handleChange(event) {
       this.setState({
         input: event.target.value
@@ -19,6 +19,7 @@ class Code extends React.Component {
 
   render() {
     const {input} = this.state;
+    //The input is transformed into elements thanks to a markdown library.
     const markdown = marked(input);
     return (
       <div>
