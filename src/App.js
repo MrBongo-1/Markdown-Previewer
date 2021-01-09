@@ -19,7 +19,7 @@ class Code extends React.Component {
 
   render() {
     const {input} = this.state;
-    //The input is transformed into elements thanks to a markdown library.
+    //The input is transformed into elements thanks to the marked library.
     const markdown = marked(input);
     return (
       <div>
